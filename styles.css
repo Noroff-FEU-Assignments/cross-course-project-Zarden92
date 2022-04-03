@@ -1,8 +1,9 @@
+/* FEW NOTES FROM ADOBE XD */
 /*COLORS*/
 /* #EDF1EC, #fff, #0378A6, #000, #707070 */
 
 /* TYPOGRAPHY */
-/* Sergoe UI -- 41pt */
+/* Inter -- 41pt */
 /* Josefin Slab -- 62pt */
 
 /*navigation styling*/
@@ -123,7 +124,10 @@ footer {
   align-items: center;
 }
 
-/*Use media query instead of flex here*/
+.adjectives {
+  display: flex;
+}
+
 .column-flex {
   display: flex;
 
