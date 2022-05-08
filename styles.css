@@ -105,11 +105,6 @@ background: #edf1ec;
   color: #fff;
   border-radius: 5px 5px 5px 5px;
   text-transform: uppercase;
-
-  /*box-shadow: 3px 3px 1px #c9cdcf;*/
-
-  /*display:flex;
-  justify-content: center;*/
 }
 
 .rainydays-logo-1 {
@@ -443,9 +438,9 @@ footer {
 }
 
 ul {
-  list-style-type: none; /* Remove bullets */
-  padding: 0; /* Remove padding */
-  margin: 0; /* Remove margins */
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
 }
 
 footer p {
