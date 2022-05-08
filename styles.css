@@ -1,153 +1,516 @@
-/* FEW NOTES FROM ADOBE XD */
-/*COLORS*/
-/* #EDF1EC, #fff, #0378A6, #000, #707070 */
+/*---- General styling ----*/
 
-/* TYPOGRAPHY */
-/* Inter -- 41pt */
-/* Josefin Slab -- 62pt */
+h1 {
+  font-family: "Roboto Slab", serif;
+}
 
-/*navigation styling*/
+p {
+  font-family: "Open Sans", sans-serif;
+}
 
+/*-----NAVIGATION------*/
 a {
   color: #070707;
+  text-decoration: none;
 }
 
-nav {
-  font-family: "Inter", sans-serif;
-  font-size: 28pt;
-  background-color: #edf1ec;
-  height: 140px;
-  color: #070707;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.home-head {
-  display: flex;
-  align-items: center;
-  margin-left: 15px;
-}
-
-.rest-head {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  margin-right: 15px;
+.rainydays--logo {
+  max-height: 50px;
+  max-width: 100px;
 }
 
 .shopping-bag {
-  max-height: 80px;
-  max-width: 80px;
+  max-height: 50px;
+  max-width: 50px;
 }
 
-/* BUTTON STYLING */
+nav{
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 30px;
+color: black;
+background: #edf1ec;
+}
 
-.jacket-btn {
-  background-color: #0378a6;
-  color: white;
-  font-size: 24px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+.menu-area{
+  text-align: center;
+}
+.menu-area ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.current {
+  text-decoration: underline;
   text-transform: uppercase;
-  border-radius: 5px 5px 5px 5px;
-  width: 250px;
-
-  margin-top: 60px;
 }
 
-/*BODY STYLING*/
 
-.container {
-  padding-left: 20px;
-  padding-right: 20px;
+/*-----HOMEPAGE----*/
+.illustration-image,
+.illustration-resistance {
+  max-width: 300px;
+  max-height: 300px;
+
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 5px 3px 2px #dce2da;
 }
 
-.header {
+.homepage-main-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  gap: 35px;
 }
 
-.icons {
-  width: 50px;
-  height: 50px;
-  margin-right: 15px;
+.homepage-text {
+  max-width: 700px;
 }
 
-.responsive-img {
-  width: 100%;
-  height: auto;
-
-  border-radius: 25px 25px 25px 25px;
-}
-
-.product-container {
+.homepage-images {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  gap: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-/*Grid system*/
-
-.row {
-  width: 100%;
+.home-title {
+  font-size: 32px;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 50px;
 }
 
-main {
+.selling-points {
+  font-size: 26px;
+  margin-bottom: 60px;
+}
+
+.homepage-main-paragraph {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.homepage-second-paragraph {
+  font-size: 20px;
+  margin-bottom: 70px;
+}
+
+.cta-assortment {
+  padding: 20px 50px 20px 50px;
+  background-color: #114451;
+  color: #fff;
+  border-radius: 5px 5px 5px 5px;
+  text-transform: uppercase;
+
+  /*box-shadow: 3px 3px 1px #c9cdcf;*/
+
+  /*display:flex;
+  justify-content: center;*/
+}
+
+.rainydays-logo-1 {
+  display: flex;
+  justify-content: center;
+
   margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+/*----PRODUCTS----*/
+
+.header-products {
+  text-align: center;
+  margin-top: 35px;
   margin-bottom: 40px;
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 80px; /* Height of the footer */
-  background: #6cf;
+.price-card {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 10px;
 }
 
-.footer-container {
-  width: 100%;
-  height: 100px;
+.product-cards {
   display: flex;
-  background-color: #edf1ec;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
   align-items: center;
+  margin: 50px 0;
+
+  gap: 40px;
+}
+
+.text-card {
+  padding: 10px 50px 30px 50px;
+}
+
+.jacket-picture {
+  max-width: 250px;
+  max-height: 250px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.card {
+  max-width: 350px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.cta-card {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px 10px 20px;
+  background-color: #052932;
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+/*----Product Page----*/
+
+.color {
+  background-color: rgb(206, 206, 202);
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  border-radius: 20px 20px 20px 20px;
+  margin-right: 10px;
+}
+
+.color-blue {
+  background-color: #2f6ee2;
+}
+.color-red {
+  background-color: #ec2f2f;
+}
+.color-yellow {
+  background-color: #f1e431;
+}
+.color-green {
+  background-color: #90cc20;
+}
+
+.storm-product,
+.wind-product,
+.rain-product {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+/*----JACKET PAGE----*/
+
+.container-product {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+  margin-top: 50px;
+}
+
+.container--productinfo {
+  max-width: 500px;
+}
+
+.cta--cart {
+  padding: 10px 40px 10px 40px;
+  background-color: #052932;
+  color: #fff;
+  border-radius: 5px 5px 5px 5px;
+  text-transform: uppercase;
+
+  display: flex;
+  justify-content: center;
+}
+
+/*----CONTACT----*/
+.h1-contact {
+  text-align: center;
+  margin-top: 35px;
+  font-size: 36px;
+}
+
+.contact-section {
+  background: #ffffff;
+  padding: 30px 0 50px 0;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 680px;
+  height: 450px;
+  background: #edf1ec;
+  text-align: left;
+  padding: 10px 0;
+}
+
+.subject,
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.id {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.name,
+.email {
+  display: inline-block;
+  width: 45%;
+}
+
+label {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+input[name="email"],
+input[name="name"] {
+  width: 100%;
+  height: 40px;
+}
+
+.subject {
+  height: 62px;
+}
+
+input[name="subject"] {
+  width: 100%;
+  height: 40px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+  resize: none;
+}
+
+.cta-contact {
+  padding: 10px 30px 10px 30px;
+  background-color: #052932;
+  color: #fff;
+  border-radius: 10px 10px 10px 10px;
+}
+
+/*-----ABOUT----*/
+
+.red-jacket-l,
+.red-jacket-m,
+.rainydays-logo {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.container-about-images {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.about-text {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.about--text {
+  max-width: 800px;
+}
+
+.content-about {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  gap: 45px;
+
+  margin-bottom: 70px;
+}
+
+.instagram,
+.facebook {
+  max-width: 40px;
+  max-height: 40px;
+  padding: 0px 10px 50px 0px;
+}
+
+/*----CHECKOUT----*/
+
+.checkout-header {
+  text-align: center;
+}
+
+.checkout-title {
+  text-align: center;
+  padding-bottom: 25px;
+  padding-top: 10px;
+}
+
+.cta-checkout {
+  padding: 10px 40px 10px 40px;
+  background-color: #052932;
+  color: #fff;
+  border-radius: 5px 5px 5px 5px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.checkout-logo{
+  max-width: 300px;
+  max-height: 300px;
+
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.checkout-form {
+  margin-bottom: 75px;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.input-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+}
+
+/*-----FOOTER------*/
+footer {
+  background-color: #edf1ec;
+  color: #052932;
+}
+
+.rainydays-icon {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.adjectives-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
 }
 
 .adjectives {
   display: flex;
+  align-items: center;
+
+  font-size: 26px;
+  margin-top: 0px;
 }
 
-footer,
-p {
-  color: #052932;
-  font-size: 24px;
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
 }
 
-.column-flex {
+.footer-content,
+.creator {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+footer p {
+  text-decoration: underline;
+}
+
+/*----MEDIA QUERIES----*/
+
+@media (max-width: 1300px) {
+ 
+  /*----About----*/
+  .container-about-images{
+    display:flex;
+    flex-direction: column;
+
+  }
+  .about-text {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1100px){
+.container-product {
   display: flex;
-
-  margin-top: 50px;
+  flex-direction: column;
+  text-align: center;
+}
+.homepage-main-container{
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
 
-.col-lg {
-  width: 60%;
-  padding-left: 40px;
-  padding-right: 40px;
 }
 
-.col-md {
-  width: 40%;
-  padding-left: 40px;
-  padding-right: 40px;
+@media (max-width: 700px) {
+
+  /*----About----*/
+  .about-text {
+    font-size: 21px;
+  }
+
+}
+
+@media (max-width: 800px) {
+    
+  .menu-area{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 12px; 
+  }
+
+  .shopping-bag {
+      max-height: 30px;
+      max-width: 30px;
+      margin-left: 15px;
+  }
+  .rainydays--logo {
+      max-height: 25px;
+      max-width: 50px;
+  }
+
+  .adjectives-container{
+    display: none;
+  }
 }

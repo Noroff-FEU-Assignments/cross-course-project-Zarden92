@@ -16,8 +16,7 @@
       rel="stylesheet"
     />
 
-    <title>Home</title>
-    
+    <title>Checkout</title>
   </head>
 
   <body>
@@ -32,8 +31,8 @@
         </div>
         <div class="menu-area">
         <ul>
-        <li><a href="index.html" class="current" >Home</a></li>
-        <li><a href="Products.html" >Products</a></li>
+          <li><a href="index.html">Home</a></li>
+        <li><a href="Products.html">Products</a></li>
         <li><a href="About.html">About</a></li>
         <li><a href="Contact.html">Contact</a></li>
         </div>
@@ -51,43 +50,46 @@
 </div>
   </header>
   
-
     <main>
-      <h1 class="home-title">The unique all weather jacket</h1>
+      <h1 class="checkout-header">Checkout</h1>
 
-      <div class="homepage-main-container">
-        <section class="homepage-text">
+      <div class="checkout-container">
+        <h2 class="checkout-title">Payment Details</h2>
+        <form action="" class="checkout-form">
+          <div class="input-line">
+            <label for="name">Name on card</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Surname, name"
+            />
+          </div>
+          <div class="input-line">
+            <label for="name">Card Number</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="1111-2222-3333-4444"
+            />
+          </div>
+          <div class="input-container">
+            <div class="input-line">
+              <label for="name">Expiring Date</label>
+              <input type="text" name="name" id="name" placeholder="01-22" />
+            </div>
+            <div class="input-line">
+              <label for="name">CVC</label>
+              <input type="text" name="name" id="name" placeholder="***" />
+            </div>
+          </div>
           
-
-          <h3 class="selling-points">Why should you choose jackets from Rainy Days?</h3>
-
-          <p class="homepage-main-paragraph">
-            The jackets are mid-range in price and emphasize durability and
-            being suitable for a range of different weather types ensuring
-            customers are comfortable whatever adventure they go on.
-          </p>
-
-          <p class="homepage-second-paragraph">
-            Order in different sizes and colors
-          </p>
-
-          <a href="products.html" class="cta-assortment">Assortment</a>
-        </section>
-
-        <section class="homepage-images">
-          <img
-            src="Images/shutterstock_678018259.jpg"
-            alt="illustration of the jacket from different angles"
-            class="illustration-image"
-          />
-          <img
-            src="Images/shutterstock_2103636191.jpg"
-            alt="illustrating water resistance"
-            class="illustration-resistance"
-          />
-        </section>
+          <img src="images/RainyDays_Logo.png" class="checkout-logo" />
+          <a href="index.html"><input type="button" value="Complete purchase" class="cta-checkout" /></a>
+        </form>
+        
       </div>
-
     </main>
 
     <footer>

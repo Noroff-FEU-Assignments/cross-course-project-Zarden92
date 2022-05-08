@@ -5,10 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script
-      src="https://kit.fontawesome.com/cbab126387.js"
-      crossorigin="anonymous"
-    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,8 +12,7 @@
       rel="stylesheet"
     />
 
-    <title>Home</title>
-    
+    <title>Jacket Storm</title>
   </head>
 
   <body>
@@ -32,8 +27,8 @@
         </div>
         <div class="menu-area">
         <ul>
-        <li><a href="index.html" class="current" >Home</a></li>
-        <li><a href="Products.html" >Products</a></li>
+          <li><a href="index.html">Home</a></li>
+        <li><a href="Products.html">Products</a></li>
         <li><a href="About.html">About</a></li>
         <li><a href="Contact.html">Contact</a></li>
         </div>
@@ -50,44 +45,51 @@
     </nav>
 </div>
   </header>
-  
 
-    <main>
-      <h1 class="home-title">The unique all weather jacket</h1>
-
-      <div class="homepage-main-container">
-        <section class="homepage-text">
-          
-
-          <h3 class="selling-points">Why should you choose jackets from Rainy Days?</h3>
-
-          <p class="homepage-main-paragraph">
-            The jackets are mid-range in price and emphasize durability and
-            being suitable for a range of different weather types ensuring
-            customers are comfortable whatever adventure they go on.
-          </p>
-
-          <p class="homepage-second-paragraph">
-            Order in different sizes and colors
-          </p>
-
-          <a href="products.html" class="cta-assortment">Assortment</a>
-        </section>
-
-        <section class="homepage-images">
+    <main class="product-page-main">
+      <div class="container-product">
+        <div class="container--productpicture">
           <img
-            src="Images/shutterstock_678018259.jpg"
-            alt="illustration of the jacket from different angles"
-            class="illustration-image"
+            src="Images/735167902-huge.jpg"
+            class="storm-product"
+            alt="Image of our jacket model Storm"
           />
-          <img
-            src="Images/shutterstock_2103636191.jpg"
-            alt="illustrating water resistance"
-            class="illustration-resistance"
-          />
-        </section>
+        </div>
+
+        <div class="container--productinfo">
+          <h1>Jacket Storm</h1>
+          <h3>The perfect jacket for extreme rainy weather</h3>
+          <div>
+            <p>Choose color:</p>
+            <div class="colors">
+              <div class="color"></div>
+              <div class="color color-blue"></div>
+              <div class="color color-red"></div>
+              <div class="color color-yellow"></div>
+              <div class="color color-green"></div>
+            </div>
+          </div>
+
+          <label for="sizes">Size:</label>
+          <select name="size" id="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="extra-large">Extra Large</option>
+          </select>
+
+          <h3>Description:</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+            alias facilis ratione? Doloribus maiores, recusandae deserunt
+            aliquam incidunt quis laudantium, alias fugit voluptatum debitis
+            commodi veniam nam? Animi, dignissimos at.
+          </p>
+          <h2>2500,-</h2>
+
+          <a href="checkout.html" class="cta--cart">add to cart</a>
+        </div>
       </div>
-
     </main>
 
     <footer>

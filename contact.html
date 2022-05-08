@@ -5,10 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script
-      src="https://kit.fontawesome.com/cbab126387.js"
-      crossorigin="anonymous"
-    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,8 +12,7 @@
       rel="stylesheet"
     />
 
-    <title>Home</title>
-    
+    <title>Contact</title>
   </head>
 
   <body>
@@ -32,10 +27,10 @@
         </div>
         <div class="menu-area">
         <ul>
-        <li><a href="index.html" class="current" >Home</a></li>
-        <li><a href="Products.html" >Products</a></li>
+          <li><a href="index.html">Home</a></li>
+        <li><a href="Products.html">Products</a></li>
         <li><a href="About.html">About</a></li>
-        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="Contact.html" class="current" >Contact</a></li>
         </div>
         <div class="checkout-bag">
         <a href="checkout.html">
@@ -50,45 +45,37 @@
     </nav>
 </div>
   </header>
-  
 
-    <main>
-      <h1 class="home-title">The unique all weather jacket</h1>
+  <main>
+    <h1 class="h1-contact">Contact</h1>
 
-      <div class="homepage-main-container">
-        <section class="homepage-text">
-          
+    <section class="contact-section">
+      <form class="contact-form">
+        <div class="id">
+          <div class="name">
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" />
+          </div>
+          <div class="email">
+            <label for="email">E-mail</label>
+            <input id="email" type="text" name="email" />
+          </div>
+        </div>
+        <div class="subject">
+          <label for="subject">Subject</label>
 
-          <h3 class="selling-points">Why should you choose jackets from Rainy Days?</h3>
+          <input id="subject" type="text" name="subject" />
+        </div>
+        <div class="content">
+          <label id="contect" for="content">Content</label>
 
-          <p class="homepage-main-paragraph">
-            The jackets are mid-range in price and emphasize durability and
-            being suitable for a range of different weather types ensuring
-            customers are comfortable whatever adventure they go on.
-          </p>
+          <textarea name="content" id="" cols="30" rows="10"></textarea>
+          <button type="submit" class="cta-contact">SEND</button>
+        </div>
+      </form>
+    </section>
 
-          <p class="homepage-second-paragraph">
-            Order in different sizes and colors
-          </p>
-
-          <a href="products.html" class="cta-assortment">Assortment</a>
-        </section>
-
-        <section class="homepage-images">
-          <img
-            src="Images/shutterstock_678018259.jpg"
-            alt="illustration of the jacket from different angles"
-            class="illustration-image"
-          />
-          <img
-            src="Images/shutterstock_2103636191.jpg"
-            alt="illustrating water resistance"
-            class="illustration-resistance"
-          />
-        </section>
-      </div>
-
-    </main>
+  </main>
 
     <footer>
       <section class="footer-container">
@@ -102,17 +89,10 @@
 
         <ul class="footer-content">
           <p>Links:</p>
-          <a href="index.html"> <li>Home</li></a>
-          <a href="products.html"> <li>Products</li></a>
-          <a href="about.index"> <li>About</li></a>
-          <a href="contact.html"> <li>Contact</li></a>
-        </ul>
-
-        <ul class="footer-content">
-          <p>Social Media:</p>
-          <a href="www.instagram.com"> <li>Instagram</li></a>
-          <a href="www.instagram.com"> <li>Facebook</li></a>
-          <a href="www.instagram.com"> <li>TikTok</li></a>
+          <li>Home</li>
+          <li>Products</li>
+          <li>About</li>
+          <li>Contact</li>
         </ul>
 
         <div class="creator">
@@ -124,7 +104,7 @@
       <section class="adjectives-container">
         <div class="adjectives">
           <img src="Icons/RainyDays.png" class="rainydays-icon" />
-          <p>Adventurous</p>
+          <p>Adveturous</p>
         </div>
         <div class="adjectives">
           <img src="Icons/RainyDays.png" class="rainydays-icon" />
